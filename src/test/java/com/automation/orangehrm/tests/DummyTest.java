@@ -10,13 +10,13 @@ import java.io.IOException;
 
 public class DummyTest extends BaseClass {     // class name should be PascalCase
 
-    By imgLocator = By.xpath("//div[@class='orangehrm-login-branding']/img");
+    By imgLocator = By.xpath("//img[@alt='company-branding']");
 
     @Test
     public void verifyImageIsPresent() {
-        boolean isImagePresent = driver.findElement(imgLocator).isEnabled();
+        boolean isImagePresent = getDriver().findElement(imgLocator).isEnabled();
         System.out.println(isImagePresent);
-        System.out.println(driver.getTitle());
+        System.out.println(getDriver().getTitle());
     }
 
 }

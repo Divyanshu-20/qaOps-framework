@@ -5,25 +5,38 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.LockSupport;
 
 public class BaseClass {
 
-    protected Properties prop;
-    protected WebDriver driver;
+    protected static Properties prop; //Static is necessary to share common copy of prop across tests
+    private static WebDriver driver;
+
+    public static WebDriver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
+    }
 
     @BeforeMethod
     public void setup() throws IOException {
         System.out.println("Setting WebDriver for: " + this.getClass().getSimpleName());
         launchBrowser();
         configureBrowser();
+        staticWait(2);
     }
 
+    @BeforeSuite
     public void loadConfig() throws IOException {
         //Load config file
         prop = new Properties();
@@ -58,13 +71,26 @@ public class BaseClass {
         driver.manage().window().maximize();
 
         //Navigate to URL
-        driver.get(prop.getProperty("url"));
+        try {
+            driver.get(prop.getProperty("url"));
+        } catch (Exception e) {
+            System.out.println("Failed to Navigate to the URL: " + e.getMessage());
+        }
     }
 
     @AfterMethod
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
+        try {
+            if (driver != null) {
+                driver.quit();
+            }
         }
+        catch (Exception e) {
+            System.out.println("Failed to quit driver: " + e.getMessage());
+        };
+    }
+
+    public void staticWait(int seconds) {
+        LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(seconds));
     }
 }
