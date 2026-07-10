@@ -25,7 +25,11 @@ public class BaseClass {
     }
 
     public void setDriver(WebDriver driver) {
-        this.driver = driver;
+        BaseClass.driver = driver;
+    }
+
+    public static Properties getProp() {
+        return prop;
     }
 
     @BeforeMethod
@@ -87,10 +91,12 @@ public class BaseClass {
         }
         catch (Exception e) {
             System.out.println("Failed to quit driver: " + e.getMessage());
-        };
+        }
     }
 
     public void staticWait(int seconds) {
         LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(seconds));
     }
+
+
 }

@@ -1,12 +1,15 @@
 package com.automation.orangehrm.actiondriver;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+
+import static com.automation.orangehrm.base.BaseClass.getProp;
 
 public class ActionDriver {
 
@@ -15,7 +18,8 @@ public class ActionDriver {
 
     public ActionDriver(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        int explicitWait = Integer.parseInt(getProp().getProperty("explicitWait"));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWait));
     }
 
     //method to click an element
@@ -32,8 +36,9 @@ public class ActionDriver {
     public void enterText(By by, String text) {
         try {
             waitForElementToBeVisible(by);
-            driver.findElement(by).clear();
-            driver.findElement(by).sendKeys(text);
+            WebElement element = driver.findElement(by);
+            element.clear();
+            element.sendKeys(text);
         } catch (Exception e) {
             System.out.println("Failed to enter text: " + e.getMessage());
         }
@@ -66,21 +71,14 @@ public class ActionDriver {
         }
     }
 
-    //method to check if an element is displayed
     public boolean isElementDisplayed(By by) {
         try {
             waitForElementToBeVisible(by);
-            boolean isDisplayed = driver.findElement(by).isDisplayed();
-            if (isDisplayed) {
-                System.out.println("Element is Displayed");
-            } else {
-                System.out.println("Element is not Displayed");
-            }
-            return isDisplayed;
+            return driver.findElement(by).isDisplayed();
         } catch (Exception e) {
             System.out.println("Unable to check if element is displayed: " + e.getMessage());
+            return false;
         }
-        return false;
     }
 
 
@@ -99,6 +97,16 @@ public class ActionDriver {
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         } catch (Exception e) {
             System.out.println("Element not visible: " + e.getMessage());
+        }
+    }
+
+    //scroll to element
+    public void scrollToElement(By by) {
+        try {
+            WebElement element = driver.findElement(by);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        } catch (Exception e) {
+            System.out.println("Failed to scroll to element: " + e.getMessage());
         }
     }
 
