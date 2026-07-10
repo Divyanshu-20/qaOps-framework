@@ -56,18 +56,13 @@ public class ActionDriver {
     }
 
 
-    //method to compare text from element with expected text
-    public void compareText(By by, String expectedText) {
+    public boolean compareText(By by, String expectedText) {
         try {
             waitForElementToBeVisible(by);
-            String actualText = driver.findElement(by).getText();
-            if (expectedText.equals(actualText)) {
-                System.out.println("Text are Matching");
-            } else {
-                System.out.println("Text are NOT Matching. Expected: " + expectedText + " | Actual: " + actualText);
-            }
+            return expectedText.equals(driver.findElement(by).getText());
         } catch (Exception e) {
             System.out.println("Unable to compare: " + e.getMessage());
+            return false;
         }
     }
 

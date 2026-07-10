@@ -1,5 +1,6 @@
 package com.automation.orangehrm.base;
 
+import com.automation.orangehrm.actiondriver.ActionDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -19,6 +20,7 @@ public class BaseClass {
 
     protected static Properties prop; //Static is necessary to share common copy of prop across tests
     private static WebDriver driver;
+    private static ActionDriver actionDriver;
 
     public static WebDriver getDriver() {
         return driver;
