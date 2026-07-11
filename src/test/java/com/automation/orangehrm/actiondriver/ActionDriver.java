@@ -11,6 +11,9 @@ import java.time.Duration;
 
 import static com.automation.orangehrm.base.BaseClass.getProp;
 
+
+/* Consider this as BASEPAGE CLASS WHICH HOLDS WHAT ALL SELENIUM WEBDRIVER CAN PERFORM ON A PAGE */
+
 public class ActionDriver {
 
     private WebDriver driver;

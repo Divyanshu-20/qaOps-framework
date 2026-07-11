@@ -20,7 +20,7 @@ public class BaseClass {
 
     protected static Properties prop; //Static is necessary to share common copy of prop across tests
     private static WebDriver driver;
-    private static ActionDriver actionDriver;
+    //private static ActionDriver actionDriver;
 
     public static WebDriver getDriver() {
         return driver;
@@ -96,6 +96,7 @@ public class BaseClass {
         }
     }
 
+    //If browser loads in 0.5 seconds, we essentially waste 1.5 seconds if passed 2. Recheck.
     public void staticWait(int seconds) {
         LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(seconds));
     }

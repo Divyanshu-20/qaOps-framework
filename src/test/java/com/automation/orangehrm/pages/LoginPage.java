@@ -15,14 +15,14 @@ public class LoginPage {
 
     //Define Locators
     private By userNameField = By.name("username");
-    private By passworField = By.cssSelector("input[type='password']");
+    private By passwordField = By.cssSelector("input[type='password']");
     private By loginButton = By.xpath("//button[text()=' Login ']");
     private By errorMessage = By.xpath("//p[text()='Invalid credentials']");
 
     //Method to perform login
     public void login(String userName, String password) {
         actionDriver.enterText(userNameField, userName);
-        actionDriver.enterText(passworField, password);
+        actionDriver.enterText(passwordField, password);
         actionDriver.click(loginButton);
     }
 
