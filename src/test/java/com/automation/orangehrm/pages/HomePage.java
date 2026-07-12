@@ -22,4 +22,19 @@ public class HomePage {
     private By searchButton = By.xpath("//button[@type='submit']");
     private By emplFirstAndMiddleName = By.xpath("//div[@class='oxd-table-card']/div/div[3]");
     private By emplLastName = By.xpath("//div[@class='oxd-table-card']/div/div[4]");
+
+    // Method to verify if Admin tab is visible
+    public boolean isAdminTabVisible() {
+        return actionDriver.isElementDisplayed(adminTab);
+    }
+
+    public boolean verifyOrangeHRMlogo() {
+        return actionDriver.isElementDisplayed(oranageHRMlogo);
+    }
+
+    // Method to perform logout operation
+    public void logout() {
+        actionDriver.click(userIDButton);
+        actionDriver.click(logoutButton);
+    }
 }

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static com.automation.orangehrm.base.BaseClass.getProp;
+import static com.automation.orangehrm.base.BaseTest.getProp;
 
 
 /* Consider this as BASEPAGE CLASS WHICH HOLDS WHAT ALL SELENIUM WEBDRIVER CAN PERFORM ON A PAGE */

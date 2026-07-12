@@ -1,7 +1,6 @@
 package com.automation.orangehrm.pages;
 
 import com.automation.orangehrm.actiondriver.ActionDriver;
-import com.automation.orangehrm.base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
