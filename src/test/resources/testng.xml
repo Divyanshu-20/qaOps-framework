@@ -3,7 +3,7 @@
 <suite name = "OrangeHRMSuite">
     <test name = "OrangeHRMTest">
         <classes>
-            <class name="com.automation.orangehrm.tests.DummyTest"> </class>
+            <class name="com.automation.orangehrm.tests.LoginPageTest"> </class>
         </classes>
     </test>
 </suite>

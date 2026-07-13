@@ -1,6 +1,7 @@
 package com.automation.orangehrm.pages;
 
 import com.automation.orangehrm.actiondriver.ActionDriver;
+import com.automation.orangehrm.base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,7 +9,7 @@ public class HomePage {
     private ActionDriver actionDriver;
 
     public HomePage(WebDriver driver) {
-        this.actionDriver = new ActionDriver(driver);
+        this.actionDriver = BaseTest.getActionDriver();
     }
 
     // Define locators using By class

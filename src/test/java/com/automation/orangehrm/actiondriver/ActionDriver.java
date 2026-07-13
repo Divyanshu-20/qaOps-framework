@@ -62,9 +62,15 @@ public class ActionDriver {
     public boolean compareText(By by, String expectedText) {
         try {
             waitForElementToBeVisible(by);
-            return expectedText.equals(driver.findElement(by).getText());
+            String actualText = driver.findElement(by).getText();
+            if (expectedText.equals(actualText)) {
+                System.out.println("Text match confirmed: [" + actualText + "]");
+                return true;
+            }
+            System.out.println("Text mismatch — Expected: [" + expectedText + "] | Actual: [" + actualText + "]");
+            return false;
         } catch (Exception e) {
-            System.out.println("Unable to compare: " + e.getMessage());
+            System.out.println("Unable to compare text: " + e.getMessage());
             return false;
         }
     }

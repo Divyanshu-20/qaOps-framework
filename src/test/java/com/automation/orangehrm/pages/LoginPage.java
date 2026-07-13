@@ -1,6 +1,7 @@
 package com.automation.orangehrm.pages;
 
 import com.automation.orangehrm.actiondriver.ActionDriver;
+import com.automation.orangehrm.base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -8,8 +9,13 @@ public class LoginPage {
     private ActionDriver actionDriver;
 
 
-    public LoginPage(WebDriver driver) {
+    /* public LoginPage(WebDriver driver) {
         this.actionDriver = new ActionDriver(driver);
+    }
+    */
+
+    public LoginPage (WebDriver driver) {
+        this.actionDriver = BaseTest.getActionDriver();
     }
 
     //Define Locators
