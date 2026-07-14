@@ -20,9 +20,12 @@ import java.util.concurrent.locks.LockSupport;
 public class BaseTest {
 
     protected static Properties prop;
-    private static WebDriver driver;
-    private static ActionDriver actionDriver;
+    // private static WebDriver driver;
+    // private static ActionDriver actionDriver;
     public static final Logger logger = LoggerManager.getLogger(BaseTest.class); //you are not creating new Logger or something, just storing (Logger) what you got from another class
+
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static ThreadLocal<ActionDriver> actionDriver = new ThreadLocal<>();
 
     /*
     public static WebDriver getDriver() {
@@ -45,12 +48,14 @@ public class BaseTest {
         configureBrowser();
         staticWait(2);
 
-        //Initialize ActionDriver (SINGLETON PATTERN)
-        if(actionDriver == null) {
-            actionDriver = new ActionDriver(driver);
-            logger.info("ActionDriver instance created");
+        // Initialize ActionDriver (SINGLETON PATTERN)
+        // if(actionDriver == null) {
+        //     actionDriver = new ActionDriver(driver);
+        //     logger.info("ActionDriver instance created");
+        // Initialize ActionDriver (Current Thread )
+        actionDriver.set(new ActionDriver(getDriver()));
+        logger.info("ActionDriver initlialized for thread: " + Thread.currentThread().getId());
         }
-    }
 
     @BeforeSuite
     public void loadConfig() throws IOException {
@@ -67,10 +72,10 @@ public class BaseTest {
 
         switch (browser.toLowerCase()) {
             case "chrome":
-                driver = new ChromeDriver();
+                driver.set(new ChromeDriver());
                 break;
             case "edge":
-                driver = new EdgeDriver();
+                driver.set(new EdgeDriver());
                 break;
             default:
                 logger.error("Browser not supported: {}", browser);
@@ -83,15 +88,15 @@ public class BaseTest {
     public void configureBrowser() {
         //Implicit wait
         int wait = Integer.parseInt(prop.getProperty("implicitWait"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(wait));
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(wait));
         logger.debug("Implicit wait set to {} seconds", wait);
 
         //Maximize Driver
-        driver.manage().window().maximize();
+        getDriver().manage().window().maximize();
 
         //Navigate to URL
         try {
-            driver.get(prop.getProperty("url"));
+            getDriver().get(prop.getProperty("url"));
             logger.info("Navigated to URL: {}", prop.getProperty("url"));
         } catch (Exception e) {
             logger.error("Failed to navigate to the URL: {}", e.getMessage());
@@ -101,16 +106,16 @@ public class BaseTest {
     @AfterMethod
     public void tearDown() {
         try {
-            if (driver != null) {
-                driver.quit();
+            if (getDriver() != null) {
+                getDriver().quit();
                 logger.info("WebDriver session closed");
             }
         }
         catch (Exception e) {
             logger.error("Failed to quit driver: {}", e.getMessage());
         }
-        driver=null;
-        actionDriver=null;
+        driver.remove();
+        actionDriver.remove();
     }
 
     //If browser loads in 0.5 seconds, we essentially waste 1.5 seconds if passed 2. Recheck.
@@ -121,22 +126,22 @@ public class BaseTest {
     // Getter Method for WebDriver
     public static WebDriver getDriver() {
 
-        if (driver == null) {
+        if (driver.get() == null) {
             logger.error("WebDriver is not initialized");
             throw new IllegalStateException("WebDriver is not initialized");
         }
-        return driver;
+        return driver.get();
 
     }
 
     // Getter Method for ActionDriver
     public static ActionDriver getActionDriver() {
 
-        if (actionDriver == null) {
+        if (actionDriver.get() == null) {
             logger.error("ActionDriver is not initialized");
             throw new IllegalStateException("ActionDriver is not initialized");
         }
-        return actionDriver;
+        return actionDriver.get();
 
     }
 

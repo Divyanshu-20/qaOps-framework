@@ -80,3 +80,231 @@
 2026-07-14 17:33:52 [main] INFO  ActionDriver - Clicked Element with text: manda user
 2026-07-14 17:33:58 [main] INFO  ActionDriver - Clicked Element with text: Logout
 2026-07-14 17:34:00 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:00:00 [main] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:00:00 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:00:02 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:00:04 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:00:06 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 21:00:06 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:00:07 [main] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:00:07 [main] INFO  ActionDriver - Clicked Element with text: First1784039391189 Last1784039391189
+2026-07-14 21:00:08 [main] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:00:08 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:00:08 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:00:08 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:00:09 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:00:11 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:00:13 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 21:00:13 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:00:15 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:00:15 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:00:15 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:00:15 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:00:17 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:00:19 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 21:00:20 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:00:21 [main] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 21:00:21 [main] INFO  ActionDriver - Clicked Element with text: First1784039391189 Last1784039391189
+2026-07-14 21:00:22 [main] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:00:25 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:41:29 [main] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:41:29 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:41:31 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:41:33 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:41:35 [main] INFO  BaseTest - ActionDriver initlialized for thread: 1
+2026-07-14 21:41:35 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:41:37 [main] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:41:37 [main] INFO  ActionDriver - Clicked Element with text: TestUser_1384 user
+2026-07-14 21:41:38 [main] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:41:38 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:41:38 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:41:38 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:41:39 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:41:41 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:41:43 [main] INFO  BaseTest - ActionDriver initlialized for thread: 1
+2026-07-14 21:41:43 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:41:44 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:41:44 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:41:44 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:41:45 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:41:47 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:41:49 [main] INFO  BaseTest - ActionDriver initlialized for thread: 1
+2026-07-14 21:41:49 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:41:51 [main] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 21:41:51 [main] INFO  ActionDriver - Clicked Element with text: TestUser_1384 user
+2026-07-14 21:41:52 [main] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:41:54 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:45:40 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:45:40 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:45:40 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:45:40 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:45:42 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:45:42 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:45:44 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:45:46 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - ActionDriver initlialized for thread: 51
+2026-07-14 21:45:47 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:45:49 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:45:49 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 50
+2026-07-14 21:45:49 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:45:50 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:45:50 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:45:52 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:45:52 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:45:52 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:45:52 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:45:52 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:45:54 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:47:10 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:47:12 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 50
+2026-07-14 21:47:14 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:47:24 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 21:47:24 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:47:42 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:47:45 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:49:23 [main] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:49:23 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:49:25 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:49:27 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:49:29 [main] INFO  BaseTest - ActionDriver initlialized for thread: 1
+2026-07-14 21:49:29 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:49:31 [main] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:49:31 [main] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:49:32 [main] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:49:33 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:49:33 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:49:33 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:49:33 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:49:35 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:49:37 [main] INFO  BaseTest - ActionDriver initlialized for thread: 1
+2026-07-14 21:49:38 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:49:39 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:49:39 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:49:39 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:49:40 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:49:41 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:49:43 [main] INFO  BaseTest - ActionDriver initlialized for thread: 1
+2026-07-14 21:49:44 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:49:45 [main] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 21:49:45 [main] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:49:47 [main] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:49:49 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:50:22 [TestNG-test-Surefire test-2] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:50:22 [TestNG-test-Surefire test-1] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:50:22 [TestNG-test-Surefire test-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:50:22 [TestNG-test-Surefire test-2] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:50:23 [TestNG-test-Surefire test-2] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:50:23 [TestNG-test-Surefire test-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:50:25 [TestNG-test-Surefire test-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:50:27 [TestNG-test-Surefire test-1] INFO  BaseTest - ActionDriver initlialized for thread: 30
+2026-07-14 21:50:28 [TestNG-test-Surefire test-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:50:29 [TestNG-test-Surefire test-1] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:50:29 [TestNG-test-Surefire test-1] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:50:30 [TestNG-test-Surefire test-1] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:50:30 [TestNG-test-Surefire test-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:51:33 [TestNG-test-Surefire test-2] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:51:35 [TestNG-test-Surefire test-2] INFO  BaseTest - ActionDriver initlialized for thread: 31
+2026-07-14 21:51:36 [TestNG-test-Surefire test-2] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:51:44 [TestNG-test-Surefire test-2] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:51:44 [TestNG-test-Surefire test-2] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:51:44 [TestNG-test-Surefire test-2] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:51:45 [TestNG-test-Surefire test-2] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:51:47 [TestNG-test-Surefire test-2] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:51:49 [TestNG-test-Surefire test-2] INFO  BaseTest - ActionDriver initlialized for thread: 31
+2026-07-14 21:51:49 [TestNG-test-Surefire test-2] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:51:51 [TestNG-test-Surefire test-2] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 21:51:51 [TestNG-test-Surefire test-2] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:51:53 [TestNG-test-Surefire test-2] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:51:55 [TestNG-test-Surefire test-2] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:52:49 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:52:49 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:52:49 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:52:49 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:52:50 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:52:50 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:52:53 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:52:53 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:52:55 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 27
+2026-07-14 21:52:55 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - ActionDriver initlialized for thread: 28
+2026-07-14 21:52:55 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:52:55 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:52:56 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:52:56 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:52:56 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:52:57 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:52:57 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:52:57 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:52:58 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:52:58 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:52:59 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:53:01 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 27
+2026-07-14 21:53:03 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:53:03 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 21:53:03 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:53:05 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:53:07 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:54:45 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:54:45 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:54:45 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:54:45 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:54:47 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:54:47 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:54:49 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:54:49 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:54:51 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - ActionDriver initlialized for thread: 50
+2026-07-14 21:54:51 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 49
+2026-07-14 21:54:51 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:54:52 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:54:53 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:54:53 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:54:53 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:54:53 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:54:53 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:54:53 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:54:54 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:54:54 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:54:55 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:54:57 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 49
+2026-07-14 21:54:58 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:54:59 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 21:54:59 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:55:01 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:55:03 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:57:26 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:57:26 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:57:26 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:57:26 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:57:27 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:57:29 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:57:31 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 50
+2026-07-14 21:57:32 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:57:33 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:57:33 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:57:33 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:57:34 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:59:47 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 21:59:47 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:59:47 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:59:47 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:59:48 [TestNG-test-OrangeHRMTest-2] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:59:48 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:59:51 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:59:51 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:59:53 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - ActionDriver initlialized for thread: 50
+2026-07-14 21:59:53 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 49
+2026-07-14 21:59:53 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:59:53 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 21:59:54 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:59:54 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 21:59:54 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 21:59:55 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Element located using: By.xpath: //div[@class='oxd-brand-banner']//img is displayed: true
+2026-07-14 21:59:55 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 21:59:55 [TestNG-test-OrangeHRMTest-1] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 21:59:56 [TestNG-test-OrangeHRMTest-2] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 21:59:56 [TestNG-test-OrangeHRMTest-2] INFO  BaseTest - WebDriver session closed
+2026-07-14 21:59:57 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 21:59:59 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - ActionDriver initlialized for thread: 49
+2026-07-14 22:00:00 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 22:00:01 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 22:00:01 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: TestUser_6314 user
+2026-07-14 22:00:02 [TestNG-test-OrangeHRMTest-1] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 22:00:04 [TestNG-test-OrangeHRMTest-1] INFO  BaseTest - WebDriver session closed

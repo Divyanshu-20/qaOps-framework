@@ -7,8 +7,6 @@
           <value>
             <TabSessionState>
               <option name="provider" value="claude" />
-              <option name="sessionId" value="0c3f3479-fcc8-4b3f-a16f-c030639a119c" />
-              <option name="cwd" value="D:\Downloads\qaOps\qaOps-framework" />
               <option name="model" value="claude-sonnet-5[1m]" />
               <option name="permissionMode" value="default" />
             </TabSessionState>
