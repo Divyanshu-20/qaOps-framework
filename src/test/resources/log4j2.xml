@@ -33,5 +33,10 @@
             <appenderref ref="ErrorFileLogger" />
         </logger>
 
+        <!-- Fallback for everything else (e.g. Selenium's own logs routed via SLF4J) -->
+        <root level="error">
+            <appenderref ref="Console" />
+        </root>
+
     </loggers>
 </configuration>

@@ -40,3 +40,43 @@
 2026-07-14 01:48:16 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2026-07-14 01:48:18 [main] INFO  BaseTest - ActionDriver instance created
 2026-07-14 01:48:23 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 11:53:21 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 11:53:21 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 11:53:23 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 11:53:25 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 11:53:27 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 11:53:29 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 11:53:29 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 11:53:29 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 11:53:30 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 11:53:32 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 11:53:34 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 11:53:40 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 11:56:04 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 11:56:04 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 11:56:05 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 11:56:07 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 11:56:09 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 11:56:44 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 12:02:56 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 12:02:56 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 12:02:57 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 12:03:06 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 12:03:08 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 12:03:45 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 12:05:06 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 12:05:06 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 12:05:07 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 12:05:11 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 12:05:13 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 12:05:19 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 17:33:34 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 17:33:34 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 17:33:37 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 17:33:40 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 17:33:42 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 17:33:43 [main] INFO  ActionDriver - Clicked Element with text: Login
+2026-07-14 17:33:52 [main] INFO  ActionDriver - Element with text: Admin is displayed: true
+2026-07-14 17:33:52 [main] INFO  ActionDriver - Clicked Element with text: manda user
+2026-07-14 17:33:58 [main] INFO  ActionDriver - Clicked Element with text: Logout
+2026-07-14 17:34:00 [main] INFO  BaseTest - WebDriver session closed
