@@ -7,8 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertTrue;
-
 public class LoginPageTest extends BaseTest {
    private LoginPage loginPage;
    private HomePage homePage;

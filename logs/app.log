@@ -1,0 +1,42 @@
+2026-07-14 01:36:04 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 01:36:04 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 01:36:06 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 01:36:09 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 01:36:11 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 01:36:17 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 01:37:25 [main] INFO  BaseTest - Setting up WebDriver for test: HomePageTest
+2026-07-14 01:37:25 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 01:37:26 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 01:37:28 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 01:37:30 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 01:37:33 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 01:37:33 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 01:37:33 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 01:37:34 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 01:37:36 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 01:37:38 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 01:37:39 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 01:37:39 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 01:37:39 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 01:37:40 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 01:37:42 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 01:37:44 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 01:37:50 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 01:39:12 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 01:39:12 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 01:39:14 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 01:39:16 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 01:39:18 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 01:39:23 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 01:46:42 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 01:46:42 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 01:46:43 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 01:47:58 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 01:48:00 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 01:48:13 [main] INFO  BaseTest - WebDriver session closed
+2026-07-14 01:48:13 [main] INFO  BaseTest - Setting up WebDriver for test: LoginPageTest
+2026-07-14 01:48:13 [main] DEBUG BaseTest - Launching browser: chrome
+2026-07-14 01:48:14 [main] DEBUG BaseTest - Implicit wait set to 10 seconds
+2026-07-14 01:48:16 [main] INFO  BaseTest - Navigated to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2026-07-14 01:48:18 [main] INFO  BaseTest - ActionDriver instance created
+2026-07-14 01:48:23 [main] INFO  BaseTest - WebDriver session closed

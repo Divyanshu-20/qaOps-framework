@@ -1,6 +1,8 @@
 package com.automation.orangehrm.base;
 
 import com.automation.orangehrm.actiondriver.ActionDriver;
+import com.automation.orangehrm.utilities.LoggerManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -20,6 +22,7 @@ public class BaseTest {
     protected static Properties prop;
     private static WebDriver driver;
     private static ActionDriver actionDriver;
+    public static final Logger logger = LoggerManager.getLogger(BaseTest.class); //you are not creating new Logger or something, just storing (Logger) what you got from another class
 
     /*
     public static WebDriver getDriver() {
@@ -37,15 +40,15 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() throws IOException {
-        System.out.println("Setting WebDriver for: " + this.getClass().getSimpleName());
+        logger.info("Setting up WebDriver for test: {}", this.getClass().getSimpleName());
         launchBrowser();
         configureBrowser();
         staticWait(2);
 
-        //Initialize AcitonDriver (SINGLETON PATTERN)
+        //Initialize ActionDriver (SINGLETON PATTERN)
         if(actionDriver == null) {
             actionDriver = new ActionDriver(driver);
-            System.out.println("ActionDriver instance is created");
+            logger.info("ActionDriver instance created");
         }
     }
 
@@ -60,6 +63,7 @@ public class BaseTest {
     private void launchBrowser(){
         //WebDriver Initialization
         String browser = prop.getProperty("browser");
+        logger.debug("Launching browser: {}", browser);
 
         switch (browser.toLowerCase()) {
             case "chrome":
@@ -69,6 +73,7 @@ public class BaseTest {
                 driver = new EdgeDriver();
                 break;
             default:
+                logger.error("Browser not supported: {}", browser);
                 throw new IllegalArgumentException("Browser Not Supported " + browser);
         }
     }
@@ -79,6 +84,7 @@ public class BaseTest {
         //Implicit wait
         int wait = Integer.parseInt(prop.getProperty("implicitWait"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(wait));
+        logger.debug("Implicit wait set to {} seconds", wait);
 
         //Maximize Driver
         driver.manage().window().maximize();
@@ -86,8 +92,9 @@ public class BaseTest {
         //Navigate to URL
         try {
             driver.get(prop.getProperty("url"));
+            logger.info("Navigated to URL: {}", prop.getProperty("url"));
         } catch (Exception e) {
-            System.out.println("Failed to Navigate to the URL: " + e.getMessage());
+            logger.error("Failed to navigate to the URL: {}", e.getMessage());
         }
     }
 
@@ -96,10 +103,11 @@ public class BaseTest {
         try {
             if (driver != null) {
                 driver.quit();
+                logger.info("WebDriver session closed");
             }
         }
         catch (Exception e) {
-            System.out.println("Failed to quit driver: " + e.getMessage());
+            logger.error("Failed to quit driver: {}", e.getMessage());
         }
         driver=null;
         actionDriver=null;
@@ -114,7 +122,7 @@ public class BaseTest {
     public static WebDriver getDriver() {
 
         if (driver == null) {
-            System.out.println("WebDriver is not initialized");
+            logger.error("WebDriver is not initialized");
             throw new IllegalStateException("WebDriver is not initialized");
         }
         return driver;
@@ -125,7 +133,7 @@ public class BaseTest {
     public static ActionDriver getActionDriver() {
 
         if (actionDriver == null) {
-            System.out.println("ActionDriver is not initialized");
+            logger.error("ActionDriver is not initialized");
             throw new IllegalStateException("ActionDriver is not initialized");
         }
         return actionDriver;
