@@ -8,12 +8,8 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
     private ActionDriver actionDriver;
 
-
-    /* public LoginPage(WebDriver driver) {
-        this.actionDriver = new ActionDriver(driver);
-    }
-    */
-
+    // Pulls the thread's existing ActionDriver from BaseTest instead of creating a new
+    // one here, so this page shares the same driver/wait config as the running test.
     public LoginPage (WebDriver driver) {
         this.actionDriver = BaseTest.getActionDriver();
     }

@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
     private ActionDriver actionDriver;
 
+    // Same pattern as LoginPage: reuse the thread's ActionDriver from BaseTest
+    // rather than constructing a new one per page object.
     public HomePage(WebDriver driver) {
         this.actionDriver = BaseTest.getActionDriver();
     }

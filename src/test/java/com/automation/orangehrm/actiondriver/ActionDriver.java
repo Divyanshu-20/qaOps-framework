@@ -13,12 +13,15 @@ import java.time.Duration;
 
 import static com.automation.orangehrm.base.BaseTest.getProp;
 
-/* Consider this as BASEPAGE CLASS WHICH HOLDS WHAT ALL SELENIUM WEBDRIVER CAN PERFORM ON A PAGE */
-
+// Wraps raw Selenium calls (click, type, wait, etc.) so page objects never call
+// driver.findElement(...) directly. One instance is created per thread by BaseTest.setup()
+// and handed out via BaseTest.getActionDriver().
 public class ActionDriver {
 
     private WebDriver driver;
     private WebDriverWait wait;
+    // Reuses BaseTest's logger instead of creating a separate one, so ActionDriver
+    // and test logs interleave under the same class-based logger config.
     public static final Logger logger = BaseTest.logger;
 
     public ActionDriver(WebDriver driver) {
