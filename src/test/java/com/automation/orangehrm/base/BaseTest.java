@@ -39,7 +39,7 @@ public class BaseTest {
     // Runs before every @Test method: brings up a fresh browser + ActionDriver
     // so each test starts from a clean, isolated state.
     @BeforeMethod
-    public void setup() throws IOException {
+    public synchronized void setup() throws IOException {
         logger.info("Setting up WebDriver for test: {}", this.getClass().getSimpleName());
         launchBrowser();
         configureBrowser();
@@ -62,7 +62,7 @@ public class BaseTest {
 
     // Reads the "browser" key from config.properties and stores a new driver instance
     // for the current thread. Add a new case here to support another browser.
-    private void launchBrowser(){
+    private synchronized void launchBrowser(){
         String browser = prop.getProperty("browser");
         logger.debug("Launching browser: {}", browser);
 
@@ -102,7 +102,7 @@ public class BaseTest {
     // Runs after every @Test method: closes the browser and clears this thread's
     // ThreadLocal slots so no stale WebDriver/ActionDriver leaks into the next test.
     @AfterMethod
-    public void tearDown() {
+    public synchronized void tearDown() {
         try {
             if (getDriver() != null) {
                 getDriver().quit();
@@ -132,6 +132,10 @@ public class BaseTest {
         }
         return driver.get();
 
+    }
+
+    public static void setDriver(ThreadLocal<WebDriver> driver) {
+        BaseTest.driver = driver;
     }
 
     // Returns the current thread's ActionDriver. Page objects (e.g. LoginPage, HomePage)
